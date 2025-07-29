@@ -18,6 +18,8 @@ TARGET_SCREEN_HEIGHT := 2772
 TARGET_SCREEN_WIDTH := 1240
 
 # Display
+$(call soong_config_set_bool,qtidisplay,oplus_udfps,true)
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946583411818883.xml
 
