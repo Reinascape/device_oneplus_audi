@@ -15,6 +15,9 @@ DEVICE_PATH := device/oneplus/audi
 # Assert
 TARGET_OTA_ASSERT_DEVICE := OP5CFBL1
 
+# Camera
+TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.audi
+
 # Display
 TARGET_SCREEN_DENSITY := 560
 
