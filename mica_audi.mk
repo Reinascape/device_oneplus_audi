@@ -10,19 +10,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from audi device
 $(call inherit-product, device/oneplus/audi/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common mica stuff.
+$(call inherit-product, vendor/mica/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_audi
+PRODUCT_NAME := mica_audi
 PRODUCT_DEVICE := audi
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := PJF110
-
-# EvolutionX stuff
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_ENABLE_BLUR := true
-WITH_GMS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
