@@ -1762,8 +1762,8 @@ odm/lib64/libaiboost_qnn_external_delegate_te.so;FIX_SONAME
 odm/lib64/libaiboost_te.so;FIX_SONAME
 
 # NFC
-odm/etc/nfc/libnfc-mtp-SN220.conf_24211:vendor/etc/libnfc-nxp.conf
-odm/etc/nfc/libnfc-nci.conf_24211:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/libnfc-mtp-SN220.conf_23803:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/libnfc-nci.conf_23803:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/pn560.bin
 
 # OPLUS Display
