@@ -69,6 +69,13 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/lib64/libcwb_qcom_aidl.so': blob_fixup()
         .add_needed('libui_shim.so'),
+    (
+        'odm/lib64/libdisplaycolorfeature.so',
+        'odm/lib64/libdisplayfossfeature_nature.so',
+        'vendor/lib64/libdpps.so',
+        'vendor/lib64/libsnapdragoncolor-manager.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2_1.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
