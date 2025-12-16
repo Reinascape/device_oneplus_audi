@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Ace 3V (PJF110_15.0.0.863(CN01)).
+## are from OnePlus Ace 3V (PJF110_16.0.1.301(CN01)).
 
 # Current blobs with deps disabled:
 # com.oplus.node.mvgsat, com.oplus.node.sstabphoto, com.qti.node.dewarp, com.qti.chi.override, libcamximageformatutils, libchifeature2 depends on multiple versions of the same aidl_interface: android.hardware.graphics.allocator-V1-ndk, android.hardware.graphics.allocator-V2-ndk-source
@@ -492,6 +492,7 @@ odm/etc/camera/meishe_lut/White.cube.rgb.bin
 odm/etc/camera/meishe_lut/black_gold.bin
 odm/etc/camera/meishe_lut/blackandwhite.cube.rgb.bin
 odm/etc/camera/meishe_lut/bright_coloured.bin
+odm/etc/camera/meishe_lut/city.cube.rgb.bin
 odm/etc/camera/meishe_lut/cola.bin
 odm/etc/camera/meishe_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin
 odm/etc/camera/meishe_lut/drjw1994.bin
@@ -519,6 +520,7 @@ odm/etc/camera/meishe_lut/gt-old-times.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-quietly-ele.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-steaming.cube.rgb.bin
 odm/etc/camera/meishe_lut/interstellar_space.bin
+odm/etc/camera/meishe_lut/island.cube.rgb.bin
 odm/etc/camera/meishe_lut/jw_sun.CUBE.rgb.bin
 odm/etc/camera/meishe_lut/jw_surprise.CUBE.rgb.bin
 odm/etc/camera/meishe_lut/kodak.cube.rgb.bin
@@ -526,6 +528,7 @@ odm/etc/camera/meishe_lut/meicam.child.bin
 odm/etc/camera/meishe_lut/mono.cube.rgb.bin
 odm/etc/camera/meishe_lut/morandi.cube.rgb.bin
 odm/etc/camera/meishe_lut/morning.dream.cube.rgb.bin
+odm/etc/camera/meishe_lut/mountains.cube.rgb.bin
 odm/etc/camera/meishe_lut/natural.cube.rgb.bin
 odm/etc/camera/meishe_lut/neon-2020.cube.rgb.bin
 odm/etc/camera/meishe_lut/nostalgic.scene.cube.rgb.bin
@@ -847,9 +850,17 @@ odm/etc/camera/AiFace.json
 odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/CameraOemConfiguration.config
 odm/etc/camera/M_FaceAttribute_RGB.model
+odm/etc/camera/Vega_Align_occlusion.model
 odm/etc/camera/Vega_Attribute_Face_RGB.model
-odm/etc/camera/Vega_Detect_FaceAnimal_Gray.model
-odm/etc/camera/Vega_Track_Animals_Gray.model
+odm/etc/camera/Vega_Detect_AnimalBodyFaceEye_Gray.model
+odm/etc/camera/Vega_Detect_BodyHead_Gray.model
+odm/etc/camera/Vega_Detect_CommonFace_BGR.model
+odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye_BGR.model
+odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye_Gray.model
+odm/etc/camera/Vega_Refine_RectQuality_HumanBodyFaceEye_Gray.model
+odm/etc/camera/Vega_Track_AnimalsBodyFaceEye_Gray.model
+odm/etc/camera/Vega_Track_FaceRect20cls.model
+odm/etc/camera/Vega_Track_HumanBody_Gray.model
 odm/etc/camera/aiboost_qnn_htp2.2.0_2468630351544828688.bin
 odm/etc/camera/aiboost_qnn_htp2.2.0_3404116395018271362.bin
 odm/etc/camera/anc_cl_kernel.cache
@@ -989,6 +1000,7 @@ odm/lib64/libaisal.so
 odm/lib64/libaisd.so
 odm/lib64/libaiseg.so
 odm/lib64/libalCFR.so
+odm/lib64/libalog.so
 odm/lib64/libancbase_rt_fusion.so;FIX_SONAME
 odm/lib64/libancbase_segbase.so
 odm/lib64/libancbase_segment.so
@@ -1059,7 +1071,6 @@ odm/lib64/libqsh.utils.so
 odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib_s5k3p9.so;FIX_SONAME
 odm/lib64/libremosaiclib_s5kjn1.so;FIX_SONAME
-odm/lib64/libroi.so
 odm/lib64/libsat.so
 odm/lib64/libsaveshaderbin.so
 odm/lib64/libsharebuffer.so
@@ -1727,9 +1738,33 @@ vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
 vendor/gpu/kbc/unified_ksqs.bin
 
+# Neural networks
+odm/lib64/aiframe/cdsp/signed/libQnnHtpV73Skel.so;MODULE_SUFFIX=.signed.aiframe
+odm/lib64/aiframe/cdsp/unsigned/libQnnHtpV73Skel.so;MODULE_SUFFIX=.unsigned.aiframe
+odm/lib64/aiframe/libQnnHtp.so;MODULE_SUFFIX=.aiframe
+odm/lib64/aiframe/libQnnHtpPrepare.so;MODULE_SUFFIX=.aiframe
+odm/lib64/aiframe/libQnnHtpV73Stub.so;MODULE_SUFFIX=.aiframe
+odm/lib64/aiframe/libQnnSystem.so;MODULE_SUFFIX=.aiframe
+odm/lib64/aiframe/libaiboost_qnn_external_delegate.so;FIX_SONAME
+odm/lib64/aiframe/libqcom_llm.so
+odm/lib64/aiframe/libtransformer_lite.so
+odm/lib64/libQnnCpu.so
+odm/lib64/libQnnGpu.so
+odm/lib64/libQnnHtp.so
+odm/lib64/libQnnHtpPrepare.so
+odm/lib64/libQnnHtpV73CalculatorStub.so
+odm/lib64/libQnnHtpV73Stub.so
+odm/lib64/libQnnSaver.so
+odm/lib64/libQnnSystem.so
+odm/lib64/libaiboost.so
+odm/lib64/libaiboost_llm.so
+odm/lib64/libaiboost_qnn_external_delegate_te.so;FIX_SONAME
+odm/lib64/libaiboost_te.so;FIX_SONAME
+
 # NFC
 odm/etc/nfc/libnfc-mtp-SN220.conf_24211:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_24211:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/pn560.bin
 
 # OPLUS Display
 odm/bin/hw/vendor.oplus.hardware.displaypanelfeature-service
