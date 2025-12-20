@@ -8,6 +8,7 @@
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
 odm/etc/acdbdata/FTM/workspaceFileXml.qwsp
+odm/etc/acdbdata/MOS/acdb_cal.acdb
 odm/etc/acdbdata/Audio_Parameter_Version.txt
 odm/etc/acdbdata/acdb_cal.acdb
 
@@ -1799,6 +1800,7 @@ odm/etc/sensor/config/palawan_mtp_alsps_hw_stk32600.json
 odm/etc/sensor/config/palawan_mtp_bmi26x.json
 odm/etc/sensor/config/palawan_mtp_freefall.json
 odm/etc/sensor/config/palawan_mtp_mmc56x3x.json
+odm/etc/sensor/config/palawan_mtp_oplus_flight_scene.json
 odm/etc/sensor/config/palawan_mtp_oplus_measurement.json
 odm/etc/sensor/config/palawan_mtp_oplus_rotation_detect.json
 odm/etc/sensor/config/palawan_mtp_pocket.json
