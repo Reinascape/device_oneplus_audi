@@ -17,7 +17,7 @@ featenabler.img;AB
 hyp.img;AB
 imagefv.img;AB
 keymaster.img;AB
-modem.img;AB|d3d3ea1da3c34c10494d1b774e3c24170aa6c40a
+modem.img;AB|020e9452109c584f6a4cf596f5ea569ca5019f7c
 oplus_sec.img;AB
 oplusstanvbk.img;AB
 qupfw.img;AB
